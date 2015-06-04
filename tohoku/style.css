@@ -321,7 +321,7 @@ p {
     width: 1245px; }
   .page-index .index-wrapper .header {
     background: url(images/all-item.png) no-repeat center bottom;
-    min-height: 670px;
+    height: 670px;
     height: 100%; }
   .page-index .footer {
     margin-bottom: 50px; }
