@@ -1,0 +1,320 @@
+@import "font";
+@import "base";
+@import "components";
+
+.paragraph-section {
+	margin-bottom: 65px;
+	overflow: hidden;
+}
+
+.one-col { width: 420px;}
+.col-wrapper { overflow: hidden; margin-bottom: 50px;}
+// not front html
+.not-front {
+	// .header { overflow: hidden; margin-bottom: 80px;}
+	.logo { float: left;}
+	.wrapper { padding: 30px 0;}
+}
+
+// Menu
+.main-menu {
+	float: right;
+	width: 720px;
+	> ul > li {
+		display: inline-block;
+		margin: 0 20px;
+		float: left;
+		text-align: center;
+		position: relative;
+		&:hover {
+			.submenu { display: block;}
+		}
+	}
+	> ul > li > a,.no-link { font-size: 24px;}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active, &:focus { text-decoration: none;}
+	}
+	ul li.active a, ul li.active .no-link { 
+		@extend .th-sarabun-bold;
+		// text-decoration: underline;
+	}
+}
+
+.menu-en {
+	font-size: 18px;
+	line-height: 18px;
+	text-align: center;
+	display: block;
+	margin-top: 5px;
+}
+
+.submenu {
+	position: absolute;
+	width: 250px;
+	background-color: #efefef;
+	top: 85px;
+	display: none;
+	box-shadow: 0px 0px 3px 0 #ccc;
+	li { text-align: left;}
+	li a { 
+		@extend .th-sarabun-bold;
+		@extend .border-box;
+		font-size: 21px;
+		line-height: 24px;
+		padding: 15px;
+		display: inline-block;
+		width: 100%;
+	}
+	li a .menu-en { 
+		@extend .th-sarabun;
+		font-size: 18px; 
+		line-height: 17px;
+		margin: 0;
+		color: #666;
+	}
+	.menu-en { text-align: left;}
+}
+
+.submenu li a {
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		background-color: #000;
+		color: #fff;
+		.menu-en { color: #999;}
+	}
+}
+
+.submenu li.active a {
+	text-decoration: none;
+	background-color: #000;
+	color: #fff;
+	.menu-en { color: #999;}
+}
+
+.has-submenu {
+	padding-bottom: 20px;
+}
+
+.menu-artist.arrow-bottom:after {
+	left: 60px;
+	margin: 0;
+}
+
+// Index html
+
+.page-index {
+	background-color: #000;
+	height: 100%;
+	.wrapper { width: 1473px;}
+	.index-wrapper .header {
+		background: url(images/all-item.png) no-repeat center bottom;
+		min-height: 790px;
+		height: 100%;
+	}
+}
+
+.logo-table { 
+	padding-bottom: 370px; 
+	height: 100%; 
+	width: 100%;
+}
+
+.btn-enter {
+	text-transform: uppercase;
+	border: 1px solid #484848;
+	color: #484848;
+	padding: 15px;
+	min-width: 255px;
+	display: inline-block;
+	margin-top: 10px;
+	&:hover, &:focus, &:active {
+		border: 1px solid #fff;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+// Footer
+.footer {
+	margin-top: 50px;
+	background-color: #000;
+	ul li {
+		display: inline-block;
+		margin-right: 65px;
+		height: 50px;
+	}
+	ul li.logo-last { margin: 0;}
+}
+
+// Main html
+.tohoku-item-list {
+	margin-bottom: 60px;
+	li {
+		width: 33%;
+		text-align: center;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+	li a { display: inline-block;}
+	.item-img { 
+		height: 218px;
+		width: 218px;
+		vertical-align: bottom;
+		display: table-cell;
+	}
+
+}
+
+.item-text { 
+	font-size: 11px; 
+	line-height: 18px;
+	margin-top: 15px;
+}
+
+.basket-item a { position: relative; width: 188px;}
+.basket-item img {
+	position: absolute;
+	bottom: -35px;
+	right: 0;
+	z-index: -1;
+}
+
+.artist-item {
+	a {
+		width: 156px;
+		height: 156px;
+		border-radius: 80px;
+		background-color: #000;
+	}
+	.text-artist { 
+		color: #fff;
+		height: 156px;
+		width: 156px;
+	}
+	.arrow-right:after { top: 38px;}
+}
+
+// Intro Page
+.p2-home { width: 625px;}
+.p3-home { width: 255px;}
+.hanmaki-doll-text {
+	padding: 0 27px;
+}
+.hanmaki-doll { width: 255px; text-align: center;}
+.tohoku-map {
+	margin: 50px 0 30px 70px;
+}
+
+// Artist
+.list-artist-info > li { display: none;}
+.list-artist-info > li.show { display: block;}
+
+.p1-artist { width: 420px;}
+.tohoku-mingei { margin-left: 115px;}
+.p2-artist { width: 900px;}
+.artist-name {
+	display: inline-block;
+	margin-right: 60px;
+	&.last { margin-right: 0;}
+	a:hover { text-decoration: none;}
+}
+
+// artist active / non active
+.artist-list {
+	border-bottom: 1px solid #c7c7c7;
+	margin-bottom: 90px;
+}
+
+.artist-name {
+	padding-bottom: 35px;
+	position: relative;
+	.name { 
+		color: #d8d8d8;
+		margin-top: 40px;
+		font-size: 24px;
+	}
+	img { opacity: 0.4;}
+}
+
+.artist-name a {
+	&:hover, &.active, &:focus, &:active {
+		text-decoration: none;
+		color: #333;
+		.name { color: #333; text-decoration: none;}
+		img { opacity: 1;}	
+	}
+}
+
+.artist-name.active a {
+	img { opacity: 1;}
+	.name { color: #333; text-decoration: none;}
+}
+
+.arrow-active-wrapper {
+	width: 100%;
+	height: 16px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+}
+
+.arrow-active {
+	width: 27px;
+	height: 14px;
+	display: inline-block;
+	background: #fff url(../images/arrow-active.png) no-repeat left top ;
+}
+
+.artist-name.active {
+	.arrow-active-wrapper { display: block;}
+}
+
+.artist-content { min-height: 500px;}
+
+// Handicraft 
+.bg-handicraft {
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+.bg-basket {
+	background-position: right -80px;
+	background-image: url(images/basket-weaving.png);
+}
+
+.list-img-handicraft .img-handicraft {
+	float: left;
+	margin-left: 5px;
+	&.first { margin: 0;}
+}
+
+.slick-prev, .slick-next {
+	border: 0;
+	box-shadow: 0;
+	margin-top: 10px;
+  -webkit-appearance: none;
+  cursor: pointer;
+	@extend .hide-text;
+}
+
+.ico-slide-ctrl, .slick-prev, .slick-next {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url(images/slide-ctrl.png) no-repeat 0 0;
+	&:hover {
+		background-position: 0 -40px;
+	}
+}
+
+.ico-next, .slick-next {
+	background-position: -40px 0;
+	margin-left: 10px;
+	&:hover {
+		background-position: -40px -40px;
+	}
+}

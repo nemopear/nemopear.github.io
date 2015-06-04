@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'th_sarabun_newbold';
+  src: url("fonts/thsarabunnew_bold.eot");
+  src: url("fonts/thsarabunnew_bold.eot?#iefix") format("embedded-opentype"), 
+  url("fonts/thsarabunnew_bold.woff") format("woff"), 
+  url("fonts/thsarabunnew_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'th_sarabun_newreg';
+  src: url("fonts/thsarabunnew_regular.eot");
+  src: url("fonts/thsarabunnew_regular.eot?#iefix") format("embedded-opentype"), 
+  url("fonts/thsarabunnew_regular.woff") format("woff"), 
+  url("fonts/thsarabunnew_regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.th-sarabun-bold {
+	font-family: 'th_sarabun_newbold',Thonburi, Helvetica, sans-serif;
+	font-weight: 100;
+}
+
+.th-sarabun {
+	font-family: 'th_sarabun_newreg',Thonburi, Helvetica, sans-serif;
+	font-weight: 100;
+	strong {
+		font-family: 'th_sarabun_newbold',Thonburi, Helvetica, sans-serif;
+		font-weight: 100;
+	}
+}
+
+h1, h2 {  
+  font-family: 'th_sarabun_newbold',Thonburi, Helvetica, sans-serif; 
+  font-weight: 100;
+  padding-left: 2px;
+}
+h1 { font-size: 34px;}
+h2 { font-size: 31px; line-height: 35px;}
+
