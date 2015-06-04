@@ -1,7 +1,11 @@
-<div class="one-col pull-left">
+<div class="pull-left">
 	<div class="casting">
 		<div>
 			<h2>การหลอมเหล็ก</h2>
+			<div class="pull-right slider-wrapper" ng-controller="CastingSliderController">
+				<div class="image-current">{{ currentIndex }} / 3</div>
+				<slider images="images" imgnumber="currentIndex"  />
+			</div>
 			<p>
 				ภูมิภาคโทโฮขุเป็นที่รู้จักกันดีในเรื่องการหลอมเหล็ก ชิ้นงานที่เป็นที่รู้จักกันดี คือ กาน้ำชาและกระดิ่งลม (wind chime) เรียกเป็นภาษาญี่ปุ่นว่า นัมบุ-เท็กกิ หรือเครื่องเหล็กแบบนัมบุ (Nambu-Tekki) และยามางาตะ-อิโมโนะ หรือการหลอมเหล็กแบบยามางาตะ (Yamagata-Imono) คำว่า“นัมบุ”เป็นคำที่มาจากตระกูลซามูไรผู้ทรงอิทธิพลและปกครองพื้นที่แถบนัมบุของภูมิภาคโทโฮขุในสมัยเอโดะ (Edo Period)  หรือช่วงประมาณปลายกรุงศรีอยุธยาถึงต้นรัชกาลที่ 5  ในนิทรรศการครั้งนี้มีการนำ อาราเระ-งามะ (arare-gama) ซึ่งเป็นกาน้ำชาเหล็กมาจัดแสดงด้วย ซึ่งได้ชื่อมาจากการทำร่องขรุขระเว้นระยะ เท่าๆ กัน เมื่อมองดูแล้วเหมือนอาราเระ หรือก้อนลูกเห็บ (hailstone) นั่นเอง อีกประเภทคือ กาน้ำชาเหล็ก ฮาบิโระ (habiro) ซึ่งมีการทำครีบยื่นออกมาจากตรงฐานกา ผลิตที่เมืองโด-มาชิ (Do-machi) จังหวัดยามางาตะ กาน้ำชาทั้งสอง ทั้งอาราเระ-งามะและฮาบิโระต่างก็มีความน่าสนใจตรงรูปทรงอันเป็นเอกลักษณ์
 			</p>
@@ -12,9 +16,4 @@
 			<p>Tohoku has long been particularly well-known for metal casting, represented by iron teapots and wind chimes known as “Nambu-Tekki (Nambu  Ironware)” and “Yamagata-Imono  (Yamagata casting)”.  The name “Nambu” derives from the powerful samurai clan in the Nambu region of Tohoku who ruled the area during the Edo period. The “arare-gama” style of cast iron teapot on display derives its name from the pattern of evenly spaced bumps which resembles arare (hailstones). The “habiro” cast iron teapot with the expanding flange near the bottom is produced in Dou-machi, Yamagata prefecture. Both works are noted for their distinct shapes.</p>
 		</div>
 	</div>
-</div>
-
-<div class="pull-right slider-wrapper" ng-controller="CastingSliderController">
-	<div class="image-current">{{ currentIndex }} / 3</div>
-	<slider images="images" imgnumber="currentIndex"  />
 </div>

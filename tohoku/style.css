@@ -98,8 +98,8 @@ p {
 
 .content-wrapper {
   overflow: hidden;
-  width: 1020px;
-  margin: 190px auto 0; }
+  width: 965px;
+  margin: 190px 0 0; }
 
 .all-animate {
   animation: all 5s ease-in;
@@ -144,7 +144,7 @@ p {
 
 .slider-wrapper {
   position: relative;
-  margin-top: 80px; }
+  margin: 0 0px 50px 70px; }
 
 .slider {
   position: relative;

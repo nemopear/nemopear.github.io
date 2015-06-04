@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tohoku">
+<head>
+	<!-- <base href="/"> -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Tohoku</title>
+	<link href="style.css" rel="stylesheet">
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/flexslider/jquery.flexslider.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+</head>
+
+	<body class="not-front">
+		<div class="wrapper">
+			<div class="header">
+					<img src="images/not-front-logo.png" class="logo" style="width: 196px; height: 124px;" 
+					alt="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
+					Beautiful Handicrafts of Tohoku, Japan
+					The Japan Foundation Traveling Exhibition"
+					title="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
+					Beautiful Handicrafts of Tohoku, Japan
+					The Japan Foundation Traveling Exhibition"/>
+
+					<nav class="main-menu navbar navbar-default th-sarabun middle">
+							<ul class="nav navbar-nav navbar-right">
+								<li ui-sref-active="active">
+									<a ui-sref="home">หน้าแรก<span class="menu-en">Home</span></a>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="foreward">บทนำ<span class="menu-en">Foreword</span></a>
+								</li>
+								<li class="menu-artist has-submenu arrow-bottom" ng-class="{ 'active': $state.includes('artist') }" >
+									<div class="no-link">ศิลปินกลุ่มมินเงอิ<span class="menu-en">Tohoku and the Mingei<br />Movement Artists</span></div>
+									<ul class="submenu">
+										<li ui-sref-active="active">
+											<a ui-sref="artist.movement">การเคลื่อนไหวของศิลปินกลุ่มมินเงอิ<span class="menu-en">Tohoku and the Mingei<br />Movement Artists</span></a>
+										</li>
+										<li ng-class="{ 'active': $state.includes('artist.mingei') }">
+											<a ui-sref="artist.mingei.shiko-munakata">ศิลปินกลุ่มมินเงอิ<span class="menu-en">The Mingei Movement Artists</span></a>
+										</li>
+									</ul>
+								</li>
+								<li ng-class="{ 'active': $state.includes('handicrafts') }" class="arrow-bottom has-submenu">
+									<div class="no-link">ศิลปหัตถกรรมแห่งโทโฮขุ<span class="menu-en">Beautiful Handicrafts<br />of Tohoku</span></div>
+									<ul class="submenu">
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.basket-weaving">การสานตะกร้า<span class="menu-en">Basket Weaving</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.blunging">การทำภาชนะดินเผา<span class="menu-en">Blunging</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.stitching">การปักผ้า, การมัดย้อมและการทอผ้า<span class="menu-en">Embroidery stitching / Dyeing / Weaving</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.casting">การหลอมเหล์ก<span class="menu-en">Casting</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.woodwork">การดัดไม้และเปลือกไม้<span class="menu-en">Bent Woodwork and <br />Bark Craftsmanship</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.lacquering">การทำเครื่องเขินหรืองานรัก<span class="menu-en">Lacquering</span></a>
+										</li>
+										<li ui-sref-active="active">
+											<a ui-sref="handicrafts.painting">การวาดระบายสี<span class="menu-en">Painting</span></a>
+										</li>
+									</ul>
+								</li>
+								<li ui-sref-active="active">
+									<a ui-sref="gallery">ภาพนิทรรศการ<span class="menu-en">Gallery</span></a>
+								</li>
+							</ul>
+					</nav>
+			</div>
+
+			<div class="content-wrapper">
+				<div ui-view></div>
+			</div>
+		</div>
+		<div class="footer center">
+			<div class="wrapper">
+				<ul>
+					<li class="table">
+						<a href="#" target="_blank" class="middle">
+							<img src="images/logo-japan-foundation.png">
+						</a>
+					</li>
+					<li class="table">
+						<a href="#" target="_blank" class="middle">
+							<img src="images/logo-japan.png">
+						</a>
+					</li>
+					<li class="table">
+						<a href="#" target="_blank" class="middle">
+							<img src="images/logo-tcdc.png">
+						</a>
+					</li>
+					<li class="table">
+						<a href="#" target="_blank" class="middle">
+							<img src="images/logo-cmu.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+	</body>
+</html>

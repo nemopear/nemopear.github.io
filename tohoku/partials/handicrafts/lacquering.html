@@ -1,7 +1,12 @@
-<div class="one-col pull-left">
+<div class="pull-left">
 	<div class="lacquering">
 		<div>
 			<h2>การทำเครื่องเขินหรืองานรัก </h2>
+
+			<div class="pull-right slider-wrapper" ng-controller="LacqueringSliderController">
+				<div class="image-current">{{ currentIndex }} / 12</div>
+				<slider images="images" imgnumber="currentIndex"  />
+			</div>
 			<p>
 				เครื่องมือเครื่องใช้ที่ทำด้วยเทคนิคลงรักมีการผลิตกันอย่างกว้างขวางทั่วทั้งทวีปเอเชียตั้งแต่อดีต งานบางอย่างยังได้รับการสืบทอดและผลิตกันอยู่ในปัจจุบัน อย่างไรก็ตามงานเครื่องเขินหรืองานรักที่ปรากฏในปัจจุบันมีการกลั่นเกลาให้เป็นงานฝีมือที่แสดงเอกลักษณ์ความเป็นญี่ปุ่นและเป็นที่รู้จักกันดีทั่วทั้งโลก งานเครื่องเขินแบบโจโบจิ (Joboji) ที่จัดแสดงในงานนิทรรศการครั้งนี้ เป็นชิ้นงานที่ผลิตขึ้นที่เมืองโจโบจิซึ่งเป็นแหล่งผลิตน้ำยารักดิบที่สำคัญในภูมิภาคโทโฮขุ พื้นที่นี้ได้รับการสงวนรักษาและสืบทอดประเพณีการเก็บน้ำยารักแบบดั้งเดิมซึ่งเรียกว่า อุรุชิ-คาคิ (urushi-kaki) เป็นวิธีการกรีดยางไม้ที่ไม่ทำให้ต้นรักเกิดความเสียหาย ลักษณะเฉพาะในเครื่องเขินของภูมิภาคโทโฮขุมีความแตกต่างกันไปตามแหล่งผลิต หวังว่าทุกท่านจะเพลิดเพลินไปกับการเปรียบเทียบความแตกต่างและลักษณะพิเศษของงานหัตถศิลป์โบราณเหล่านี้
 			</p>
@@ -12,9 +17,4 @@
 			<p>Lacquered utensils and implements have been produced across Asia since ancient times, some of which are still being manufactured even today. However, in modern times refined lacquerware has become a craft so unique to japan that it is now referred to as “Japan” throughout the world. The “Joboji lacquerware” featured in this exhibition was crafted at Joboji, the noted production site of “raw lacquer” in the Tohoku region. The area has preserved and passed down a traditional lacquer sap collection method called “urushi-kaki,” which entails slashing the lacquer tree to collect the sap in a way that protects the old lacquer trees from damage. The characteristics of the lacquerware differ with each production site in Tohoku, and we hope that you will enjoy the comparison of subtle differences in the characteristics of this ancient handicraft.</p>
 		</div>
 	</div>
-</div>
-
-<div class="pull-right slider-wrapper" ng-controller="LacqueringSliderController">
-	<div class="image-current">{{ currentIndex }} / 12</div>
-	<slider images="images" imgnumber="currentIndex"  />
 </div>

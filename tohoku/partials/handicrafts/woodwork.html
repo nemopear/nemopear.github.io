@@ -1,7 +1,11 @@
-<div class="one-col pull-left">
+<div class="pull-left">
 	<div class="woodwork">
 		<div>
 			<h2>การดัดไม้และเปลือกไม้ </h2>
+			<div class="pull-right slider-wrapper" ng-controller="WoodworkSliderController">
+				<div class="image-current">{{ currentIndex }} / 3</div>
+				<slider images="images" imgnumber="currentIndex"  />
+			</div>
 			<p>
 				ความงามของงานดัดไม้นั้นอยู่ที่ลายไม้ที่เป็นเส้นตรงสวยงามและกลิ่นหอมธรรมชาติของต้นสนอากิตะ ซึ่งมีความยืดหยุ่นมาก คาบะ-ไซกุ เป็นผลิตภัณฑ์ที่มีชื่อเสียงของคาคุโนะ ดาเตะ (Kakunodate) จังหวัดอากิตะ ซึ่งเปลือกต้นเชอรี่ภูเขาได้ถูกนำมาประยุกต์ใช้เป็นพื้นผิวไม้ที่เรียกว่า “โมกุทาอิ” (mokutai)
 			</p>
@@ -14,7 +18,3 @@
 	</div>
 </div>
 
-<div class="pull-right slider-wrapper" ng-controller="WoodworkSliderController">
-	<div class="image-current">{{ currentIndex }} / 3</div>
-	<slider images="images" imgnumber="currentIndex"  />
-</div>

@@ -1,4 +1,4 @@
-<div class="one-col pull-left">
+<div class="pull-left">
 	<!-- Basket Weaving การสานตะกร้า-->
 	<div class="basket-weaving">
 		<div>
@@ -6,44 +6,18 @@
 			<p>
 				แต่ละท้องถิ่นของภูมิภาคในโลกนี้ล้วนมีการนำพืชผักท้องถิ่นมาสานเป็นตะกร้า ในประเทศญี่ปุ่นเองก็มีการนำเปลือกไม้และเถาวัลย์มาทำเป็นตะกร้า กล่อง และเครื่องมือเครื่องใช้สำหรับงานเกษตรกรรมด้วยเช่นกัน ในภูมิภาคโทโฮขุเป็นพื้นที่ที่มีฤดูหนาวที่ยาวนาน คนในพื้นที่จะใช้เวลาในช่วงฤดูหนาวนี้เป็นช่วงที่ทำงานสานตะกร้าและประดิษฐ์กล่องจากไม้ไผ่ เถาองุ่น และเถาของต้นอะเคบิ (Akebia quinata) เพื่อนำมาใช้ในชีวิตประจำวัน  
 			</p>
+			<div class="pull-right slider-wrapper" ng-controller="WeavingSliderController">
+				<div class="image-current">{{ currentIndex }} / 10</div>
+				<slider images="images" imgnumber="currentIndex"  />
+			</div>
 			<p>
 				งานหัตถกรรมเหล่านี้ไม่เพียงแต่เป็นเครื่องมือเครื่องใช้ที่ใช้ประโยชน์ได้จริงแต่ยังมีความงดงามทางศิลปะอีกด้วย แต่ถึงกระนั้นในความสวยงามก็มีความเอาใส่ใจเรื่องหน้าที่การใช้งานของตัวภาชนะซึ่งแสดงให้เห็นถึงความดั้งเดิมและภูมิปัญญาของผู้คน
 			</p>
 		</div>
-		<div>
+		<div style="width: 550px;">
 			<br />
 			<h2>Basket Weaving</h2>
 			<p>Each local region in the world has baskets made of indigenous plants and vegetations. There are various types of baskets, boxes and agricultural equipment made of bark and vines in Japan as well. Using bamboo, grape vines and akebi (Akebia quinata) vines, people in snowbound places in the Tohoku region engage in the seasonal work of making baskets and boxes during winter, highly functional containers for their daily life. Not only practical but also artistic, these crafts exude a unique beauty in utilitarian objects, enhanced by the people’s originality and ingenuity.</p>
 		</div>
 	</div>
 </div>
-
-<div class="pull-right slider-wrapper" ng-controller="WeavingSliderController">
-	<div class="image-current">{{ currentIndex }} / 10</div>
-	<slider images="images" imgnumber="currentIndex"  />
-</div>
-
-<!-- <div class="pull-right slick-wrapper">
-	<slick 		
-		class="clear" 
-		autoplay="true" 
-		infinite=true 
-		slides-to-show=1 
-		slides-to-scroll=1 
-		arrows="true" 
-		fade="true" 
-		speed=1000 
-		current-index="index">
-		<img src="images/handicraft/basket-01.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-02.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-03.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-04.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-05.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-06.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-07.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-08.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-09.png" style="width: 360px; height: 240px;"/>
-	  <img src="images/handicraft/basket-10.png" style="width: 360px; height: 240px;"/>
-	</slick>
-
-</div> -->
