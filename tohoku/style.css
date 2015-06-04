@@ -208,7 +208,8 @@ p {
   width: 960px;
   height: 640px;
   position: absolute;
-  top: 0; }
+  top: 0;
+  z-index: 9; }
 
 .flexslider {
   position: relative; }
@@ -219,13 +220,14 @@ p {
   text-indent: -999em;
   display: inline-block;
   position: absolute;
-  top: 300px; }
+  top: 0; }
 
 .flex-prev {
-  background: url(../images/flex-prev.png) no-repeat center center; }
+  background: rgba(0, 0, 0, 0.07) url(../images/flex-prev.png) no-repeat center center; }
 
 .flex-next {
-  background: url(../images/flex-next.png) no-repeat center center; }
+  background: url(../images/flex-next.png) no-repeat center center;
+  right: 0; }
 
 .paragraph-section {
   margin-bottom: 65px;
