@@ -323,6 +323,8 @@ p {
     background: url(images/all-item.png) no-repeat center bottom;
     min-height: 730px;
     height: 100%; }
+  .page-index .footer {
+    margin-bottom: 50px; }
 
 .logo-table {
   padding-bottom: 270px;
