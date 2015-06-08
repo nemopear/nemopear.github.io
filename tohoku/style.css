@@ -519,4 +519,9 @@ p {
   .ico-next:hover, .slick-next:hover {
     background-position: -40px -40px; }
 
+#preload-images {
+  position: absolute;
+  left: -9999em;
+  top: -9999em; }
+
 /*# sourceMappingURL=style.css.map */

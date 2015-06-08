@@ -20,14 +20,17 @@
 	<body class="not-front">
 		<div class="wrapper">
 			<div class="header">
-					<img src="images/not-front-logo.png" class="logo" style="width: 196px; height: 124px;" 
-					alt="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
-					Beautiful Handicrafts of Tohoku, Japan
-					The Japan Foundation Traveling Exhibition"
-					title="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
-					Beautiful Handicrafts of Tohoku, Japan
-					The Japan Foundation Traveling Exhibition"/>
-
+					<a ui-sref="home" alt="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น Beautiful Handicrafts of Tohoku, Japan. The Japan Foundation Traveling Exhibition"
+					title="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น Beautiful Handicrafts of Tohoku, Japan. The Japan Foundation Traveling Exhibition">
+						<img src="images/not-front-logo.png" class="logo" style="width: 196px; height: 124px;" 
+						alt="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
+						Beautiful Handicrafts of Tohoku, Japan
+						The Japan Foundation Traveling Exhibition"
+						title="นิทรรศการศิลปหัตถกรรมอันงดงามแห่งโทโฮขุ-ญี่ปุ่น
+						Beautiful Handicrafts of Tohoku, Japan
+						The Japan Foundation Traveling Exhibition"/>
+					</a>
+					
 					<nav class="main-menu navbar navbar-default th-sarabun middle">
 							<ul class="nav navbar-nav navbar-right">
 								<li ui-sref-active="active">
@@ -81,7 +84,7 @@
 			</div>
 
 			<div class="content-wrapper">
-				<div ui-view></div>
+				<div class="partial-content" ui-view></div>
 			</div>
 		</div>
 		<div class="footer center">
@@ -117,5 +120,6 @@
 		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.5/slick.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
+
 	</body>
 </html>
