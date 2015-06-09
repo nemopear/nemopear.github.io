@@ -2,18 +2,18 @@
 	<div class="painting">
 		<div>
 			<h2>การวาดระบายสี</h2>
-			<div class="pull-right slider-wrapper" ng-controller="PaintingSliderController">
-				<div class="image-current">{{ currentIndex }} / 13</div>
-				<slider images="images" imgnumber="currentIndex"  />
-			</div>
 			<p>
 				ตุ๊กตาโคเคชิ (Kokeshi) ขนาดใหญ่ว่าวตุ๊กตาใช้ในงานพิธีกรรมและเทียนตกแต่งลวดลายที่เรียกว่า เอะ-โรโซกุ (e-rosoku) ที่นำมาจัดแสดงในงานนิทรรศการครั้งนี้เป็นผลิตภัณฑ์อันเป็นเอกลักษณ์ของภูมิภาคโทโฮขุ ไม่เพียงแต่เรื่องรูปทรงเท่านั้น แต่ยังรวมถึงการลงสีตกแต่ง เช่น การวาดรูปเทพคิตโชเต็น (Kisshoten) เทพธิดาแห่งความงาม ลงบนว่าวแล้วนำไปใช้เป็นวัตถุมงคลที่แสดงถึงการสวดมนต์อ้อนวอนขอความคุ้มครองจากเทพเจ้าให้ปลอดภัย มีความสุขและร่ำรวยของผู้คน
 			</p>
 		</div>
-		<div>
+		<div class="pull-left" style="width: 500px;">
 			<br />
 			<h2>Painting</h2>
-			<p style="width: 550px;">The kokeshi doll, kites, ceremonial dolls and decorated candles (e-rosoku) on display are unique products of the Tohoku region. Not only their shapes, but also their decorative painting, such as the painting of the goddess of beauty (“Kisshoten”) on the kite, serves as auspicious motifs that express the prayers for safety, happiness and prosperity of the people.</p>
+			<p>The kokeshi doll, kites, ceremonial dolls and decorated candles (e-rosoku) on display are unique products of the Tohoku region. Not only their shapes, but also their decorative painting, such as the painting of the goddess of beauty (“Kisshoten”) on the kite, serves as auspicious motifs that express the prayers for safety, happiness and prosperity of the people.</p>
+		</div>
+		<div class="pull-right slider-wrapper" ng-controller="PaintingSliderController" style="margin-top: 4em;">
+			<div class="image-current">{{ currentIndex }} / 13</div>
+			<slider images="images" imgnumber="currentIndex"  />
 		</div>
 	</div>
 </div>

@@ -7,6 +7,8 @@
 	overflow: hidden;
 }
 
+.paragraph-section h2 { margin-bottom: 0;}
+
 .one-col { width: 420px;}
 .col-wrapper { overflow: hidden; margin-bottom: 50px;}
 // not front html
@@ -107,17 +109,18 @@
 
 .page-index {
 	background-color: #000;
-	height: 100%;
+	height: 768px;
+	overflow: hidden;
 	.wrapper { width: 1245px;}
 	.index-wrapper .header {
 		background: url(images/all-item.png) no-repeat center bottom;
-		height: 670px;
+		height: 350px;
 	}
 	.footer { margin-bottom: 50px;}
 }
 
 .logo-table { 
-	padding-bottom: 320px; 
+	padding-bottom: 270px; 
 	height: 100%; 
 	width: 100%;
 }
@@ -212,7 +215,6 @@
 .list-artist-info > li { display: none;}
 .list-artist-info > li.show { display: block;}
 
-.p1-artist { width: 420px;}
 .tohoku-mingei { margin-left: 115px;}
 .p2-artist { width: 900px;}
 .artist-name {
@@ -237,6 +239,9 @@
 		font-size: 24px;
 	}
 	img { opacity: 0.4;}
+	&.active a {
+		cursor: default;
+	}
 }
 
 .artist-name a {
