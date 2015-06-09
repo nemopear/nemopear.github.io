@@ -264,6 +264,8 @@ p {
     position: relative; }
     .main-menu > ul > li:hover .submenu {
       display: block; }
+  .main-menu > ul > li .no-link {
+    cursor: default; }
   .main-menu > ul > li > a, .main-menu .no-link {
     font-size: 24px; }
   .main-menu a:hover {

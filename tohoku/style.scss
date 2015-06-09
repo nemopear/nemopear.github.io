@@ -32,6 +32,7 @@
 			.submenu { display: block;}
 		}
 	}
+	> ul > li .no-link { cursor: default;}
 	> ul > li > a,.no-link { font-size: 24px;}
 	a {
 		&:hover {
