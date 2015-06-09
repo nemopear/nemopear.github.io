@@ -457,14 +457,16 @@ p {
   .artist-name.active a {
     cursor: default; }
 
-.artist-name a:hover, .artist-name a.active, .artist-name a:focus, .artist-name a:active {
-  text-decoration: none;
-  color: #333; }
-  .artist-name a:hover .name, .artist-name a.active .name, .artist-name a:focus .name, .artist-name a:active .name {
-    color: #333;
-    text-decoration: none; }
-  .artist-name a:hover img, .artist-name a.active img, .artist-name a:focus img, .artist-name a:active img {
-    opacity: 1; }
+.artist-name a {
+  text-decoration: none; }
+  .artist-name a:hover, .artist-name a.active {
+    text-decoration: none;
+    color: #333; }
+    .artist-name a:hover .name, .artist-name a.active .name {
+      color: #333;
+      text-decoration: none; }
+    .artist-name a:hover img, .artist-name a.active img {
+      opacity: 1; }
 
 .artist-name.active a img {
   opacity: 1; }
@@ -518,7 +520,8 @@ p {
   display: inline-block;
   width: 28px;
   height: 28px;
-  background: url(images/slide-ctrl.png) no-repeat 0 0; }
+  background: url(images/slide-ctrl.png) no-repeat 0 0;
+  cursor: pointer; }
   .ico-slide-ctrl:hover, .slick-prev:hover, .slick-next:hover {
     background-position: 0 -40px; }
 
