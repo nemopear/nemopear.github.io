@@ -326,8 +326,7 @@ p {
 
 .page-index {
   background-color: #000;
-  height: 768px;
-  overflow: hidden; }
+  height: 768px; }
   .page-index .wrapper {
     width: 1245px; }
   .page-index .index-wrapper .header {
