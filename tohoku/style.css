@@ -229,6 +229,11 @@ p {
   background: rgba(0, 0, 0, 0.07) url(images/flex-next.png) no-repeat center center;
   right: 0; }
 
+.flex-control-nav img {
+  opacity: 0.7; }
+  .flex-control-nav img:hover, .flex-control-nav img.flex-active {
+    opacity: 1; }
+
 .paragraph-section {
   margin-bottom: 65px;
   overflow: hidden; }

@@ -99,3 +99,10 @@
 	background: rgba(0, 0, 0, 0.07) url(images/flex-next.png) no-repeat center center;
 	right: 0;
 }
+
+.flex-control-nav img {
+	opacity: 0.7;
+	&:hover, &.flex-active {
+		opacity: 1;
+	}
+}
