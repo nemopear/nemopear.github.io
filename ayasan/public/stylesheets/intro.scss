@@ -1,0 +1,367 @@
+@mixin border-box {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+$color_orange : #ff9000;
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-weight: 200;
+}
+
+h4 { font-weight: 200;}
+
+.center {
+	text-align: center;
+}
+
+.text-orange { color: $color_orange;}
+.no-bullet {
+	list-style: none;
+	padding: 0;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 1px #333;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.link-signup { 
+	background-color: $color_orange;
+	color: #fff;
+	float: right;
+	height: 70px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 23px 25px;
+	font-size: 18px;
+	font-weight: 200;
+}
+
+.hide-text { text-indent: -999em;}
+
+.topbar-fix { border: 0;}
+.topbar-fix .container { padding: 10px 15px;}
+
+@media only screen and (max-width: 580px) {
+	.topbar-fix {
+		position: absolute;
+	}
+}
+
+.site-name {
+	font-size: 28px;
+	margin: 0;
+	font-weight: 600;
+}
+
+.navbar-brand { padding: 21px 15px; height: 70px;}
+
+.section-wrapper {
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+	.section-wrapper {
+		padding: 20px 0;
+	}
+}
+
+.section-intro {
+	background-image: url(../images/bg-intro.jpg);
+	height: 767px;
+	padding-bottom: 100px;
+	.section-title {
+		margin-top: 300px;
+		font-size: 58px;
+	}
+	.sub-title { 
+		font-size: 35px; 
+		margin-bottom: 70px;
+		font-weight: 200;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section-intro { 
+		height: auto;
+		.section-title {
+			margin-top: 150px;
+		}
+	}
+}
+
+.section-howto {
+	background-color: $color_orange;
+	padding: 20px 0;
+	.section-title { 
+		font-size: 32px;
+		margin-bottom: 65px;
+		font-weight: 400;
+	}
+	p {
+		font-size: 16px;
+		font-weight: 100;
+		max-width: 220px;
+		margin: 0 auto 10px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.section-howto { 
+		.section-title { margin-bottom: 30px;}
+		.ico-item { margin-bottom: 20px;}
+		.chevron-right:after { content: none;}
+	}
+	.icon-text-item { margin-bottom: 20px; width: 100%;}
+
+}
+
+
+.section-helper {
+	background-image: url(../images/bg-helper.jpg);
+	height: 684px;
+	.section-title {
+		font-size: 38px;
+		margin: 85px 0 70px;
+	}
+}
+
+.section-why {
+	background-color: #fbf8f1;
+	color: #333;
+	padding: 50px 0;
+	.section-title { font-size: 36px; margin-bottom: 80px;}
+	.ico-item { margin-bottom: 20px;}
+}
+
+@media only screen and (max-width: 580px) {
+	.section-why .section-title { margin-bottom: 30px;}
+} 
+
+.section-job {
+	background-image: url(../images/bg-job.jpg);
+	height: 415px;
+	.text-wrapper {
+		width: 360px;
+	}
+	.btn-signup {
+		width: 213px;
+		height: 50px;
+		font-size: 17px;
+	}
+	.section-title {
+		font-size: 54px;
+		font-weight: 600;
+		text-shadow: 2px 3px 1px #444;
+		margin-bottom: 0;
+	}
+	.sub-title { 
+		font-weight: 200; 
+		margin: 0 0 30px;
+		text-shadow: 1px 2px 2px #666;
+	}
+	.text-wrapper { margin-top: 90px;}
+}
+
+.section-footer {
+	background-image: url(../images/bg-footer.jpg);
+	height: 345px;
+	p { font-size: 25px; margin: 90px 0 20px;}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-footer p { margin-top: 20px;}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-wrapper {
+		.section-title { font-size: 32px;}
+		.sub-title { font-size: 28px;}
+
+	}
+}
+
+.btn-orange {
+	@include border-box;
+	width: 295px;
+	height: 66px;
+	border-radius: 50px;
+	background-color: $color_orange;
+	display: inline-block;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 13px 0;
+	font-weight: 500;
+}
+
+.btn-shadow {
+	box-shadow: 1px 2px 3px #666;
+}
+
+.btn-download {
+	display: inline-block;
+	width: 167px;
+	height: 50px;
+}
+
+.btn-ios {
+	background: url(../images/icon/btn-ios.png) no-repeat 0 0;
+}
+
+.btn-gg {
+	background: url(../images/icon/btn-gg.png) no-repeat 0 0;
+}
+
+.img-thumbnail.no-border {
+	width: 310px;
+	height: auto;
+	background-color: #fff;
+	border: 0;
+	padding: 0;
+	border-radius: 0;
+}
+
+.link-white-border { 
+	@include border-box;
+	display: inline-block;
+	border: 2px solid #fff;
+	padding: 13px 20px;
+	color: #fff;
+	text-transform: none;
+	width: 305px;
+	height: 70px;
+	font-size: 25px;
+	&:hover, &:focus, &:active {
+		text-decoration: none;
+		color: $color_orange;
+		border-color: $color_orange;
+	}
+}
+
+.people-wrapper .link-white-border {
+	margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	.list-people {
+		.link-white-border {
+			width: 100%;
+			font-size: 20px;
+			height: auto;
+			padding: 5px 10px;
+		}
+	}
+
+}
+
+.ico-item {
+	margin: 0 auto 45px;
+}
+
+.ico-request {
+	background: url(../images/icon/ico-request.png) no-repeat 0 bottom;
+	width: 73px;
+	height: 75px;
+}
+
+.ico-helper {
+	background: url(../images/icon/ico-helper.png) no-repeat 0 bottom;
+	width: 59px;
+	height: 75px;
+}
+
+.ico-chair {
+	background: url(../images/icon/ico-chair.png) no-repeat 0 bottom;
+	width: 78px;
+	height: 75px;
+}
+
+.chevron-right {
+	position: relative;
+}
+
+.chevron-right:after {
+	content: '\00a0';
+	background: url(../images/icon/ico-chevron-right.png) no-repeat 0 bottom;
+	width: 34px;
+	height: 56px;
+	position: absolute;
+	right: 0;
+	top: 15px;
+}
+
+.ico-time {
+	background: url(../images/icon/ico-time.png) no-repeat 0 bottom;
+	width: 75px;
+	height: 75px;
+}
+
+.ico-support {
+	background: url(../images/icon/ico-support.png) no-repeat 0 bottom;
+	width: 73px;
+	height: 75px;
+}
+
+.ico-quality {
+	background: url(../images/icon/ico-quality.png) no-repeat 0 bottom;
+	width: 69px;
+	height: 75px;
+}
+
+.ico-payment {
+	background: url(../images/icon/ico-payment.png) no-repeat 0 bottom;
+	width: 88px;
+	height: 92px;
+}
+
+.ico-mobile {
+	background: url(../images/icon/ico-mobile.png) no-repeat 0 bottom;
+	width: 47px;
+	height: 92px;
+}
+
+.list-row-2 { margin: 60px 150px 10px;}
+@media only screen and (max-width: 768px) {
+	.list-row-2 { margin: 60px 50px 10px;}
+}
+
+@media only screen and (max-width: 580px) {
+	.list-row-2 { margin-top: 0;}
+}
+
+.develop {
+	font-size: 25px;
+	padding: 5px 25px;
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 10px;
+}
+
+.download-group {
+	text-align: right;
+	margin-top: 70px;
+}
+
+.download-group a {
+	display: inline-block;
+}
+
+.btn-gg { margin-left: 15px;}
+
+@media only screen and (max-width: 768px) {
+	.download-group {
+		text-align: center;
+		margin-top: 70px;
+	}
+}

@@ -1,0 +1,215 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.image-box {
+  position: relative;
+  height: 300px;
+  display: table;
+  width: 100%;
+}
+
+.image-box-1 {
+  background-image: url(/images/image-1.png);
+  background-size: cover;
+}
+
+.image-box-2 {
+  background-image: url(/images/image-2.png);
+  background-size: cover;
+}
+
+.image-box-3 {
+  background-image: url(/images/image-3.png);
+  background-size: cover;
+}
+
+.image-box-inner {
+  position: absolute;
+  /*left: 0;*/
+  width: 100%;
+  display: table-cell;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  bottom: 0;
+  height: 80px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.text-footer {
+  /*position: absolute;*/
+  text-align: center;
+  vertical-align: middle;
+  /*display: table-cell;*/
+}
+
+.left-no-margin {
+  padding-left: 0px;
+}
+
+.badge-icon {
+  margin-right: 10px;
+}
+
+.badge-icon > a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.badge-icon > a > img {
+  height: 40px;
+}
+
+.badge-icon {
+
+}
+
+.social-icon > a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.social-icon > a > img {
+  height: 30px;
+}
+
+.image-box-inner > a > h2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.image-box-inner > a {
+  color: white;
+}
+
+footer {
+  display: table;
+}
+
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-color: #adadad;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.section2-background {
+  background-color: rgb(255,143,49);
+}
+
+.section3-background {
+  background-image: url(/images/section3-background.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.section4-background {
+  background-image: url(/images/section4-background.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  /*background-color: rgb(251,248,240);*/
+}
+
+.section5-background {
+  background-image: url(/images/section5-background.png);
+  width: 100%;
+  height: 220px;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  /*background-color: rgb(251,248,240);*/
+}
+
+.section6-background {
+  background-image: url(/images/section6-background.png);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.transparent-back {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 1%, rgba(0, 0, 0, 0.4) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.4)), color-stop(1%, rgba(0, 0, 0, 0.4)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 1%, rgba(0, 0, 0, 0.4) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 1%, rgba(0, 0, 0, 0.4) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 1%, rgba(0, 0, 0, 0.4) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 1%, rgba(0, 0, 0, 0.4) 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000', endColorstr='#66000000', GradientType=0);
+    /* IE6-9 */
+    color: #fff;
+}
+
+.feature.payment {
+    background-image: url(/images/feature-payment.png);
+    background-repeat: no-repeat;
+}
+
+.feature.quality {
+    background-image: url(/images/feature-quality.png);
+    background-repeat: no-repeat;
+}
+
+.feature.support {
+    background-image: url(/images/feature-support.png);
+    background-repeat: no-repeat;
+}
+
+.feature.time {
+    background-image: url(/images/feature-time.png);
+    background-repeat: no-repeat;
+}
+
+.feature.technology {
+    background-image: url(/images/feature-technology.png);
+    background-repeat: no-repeat;
+}
+
+.feature {
+    height: 90px;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.ayasan-color-text {
+  color: rgb(255,143,49);
+}
+
+.white-color-text {
+  color: rgb(254,254,254);
+}
