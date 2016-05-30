@@ -1,0 +1,90 @@
+// base
+
+h3 { font-size: 16px;}
+h4 { font-size: 13px;}
+
+@media (min-width: 1200px) {
+	.container { max-width: 970px;}
+}
+
+body {
+	padding: 2em;
+	background: url(../images/background.png) no-repeat center center;
+	font-size: 13px;
+	color: #555;
+	@media (max-width: 420px) {
+		padding: 1em;
+	}
+}
+
+.header {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+	margin-bottom: 20px;
+}
+
+.img-profile {
+	border-radius: 50%;
+	max-width: 150px;
+	margin: 0 auto 1em;
+}
+
+.body-wrapper {
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.66);
+	padding: 4em;
+	border-radius: 5px;
+	@media (max-width: 420px) {
+		padding: 2em;
+	}
+}
+
+.profile-wrapper {
+	color: #286090;
+	p {font-size: 18px; }
+	dd { margin-bottom: 5px;}
+}
+
+.info-section {
+	margin-bottom: 3em;
+}
+
+.info-section > .title {
+	font-size: 14px;
+	color: #286090;
+	&:after {
+		content: '\00a0';
+		width: 30px;
+		height: 2px;
+		background-color: #286090;
+		margin: 10px 0;
+		display: block;
+	}
+} 
+
+// Progress bar
+.progress {
+	max-width:150px;
+	background-color: #eee;
+	height: 14px;
+	margin-top: 3px;
+}
+
+.progress-bar {
+	background-color: #63C2DE;
+}
+
+// Portfoilio
+
+.list-work {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	h4.title {
+		margin-bottom: 3px;
+		display: inline-block;;
+	}
+	p { 
+		color: #999;
+		font-size: 11px;
+	}
+}
