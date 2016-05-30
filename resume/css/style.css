@@ -75,4 +75,7 @@ body {
     color: #999;
     font-size: 11px; }
 
+.info-section.-skill dd {
+  margin-bottom: 1em; }
+
 /*# sourceMappingURL=style.css.map */
