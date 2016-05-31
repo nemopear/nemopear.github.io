@@ -40,6 +40,8 @@ body {
     font-size: 18px; }
   .profile-wrapper dd {
     margin-bottom: 5px; }
+  .profile-wrapper h1 {
+    font-size: 26px; }
 
 .info-section {
   margin-bottom: 3em; }
