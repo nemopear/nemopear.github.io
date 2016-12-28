@@ -1,0 +1,202 @@
+a {
+  color: #fff; }
+
+.section.textBlack {
+  color: #333; }
+
+.blackBox {
+  background-color: #202328;
+  color: #fff;
+  font-family: 'Inconsolata', monospace, 'Roboto Mono';
+  font-size: 16px;
+  padding: 15px 40px;
+  margin-top: 20px; }
+  .blackBox h3 {
+    font-size: 20px;
+    text-decoration: undeline; }
+
+.listBullet {
+  list-style-type: disc; }
+  .listBullet li {
+    list-style-type: disc !important;
+    list-style-position: inside; }
+
+.bgSection1 {
+  background-image: url(../images/teamCover.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  filter: blur(2px) brightness(0.8);
+  z-index: -1; }
+
+.section {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 50px 0; }
+
+.headerSection {
+  flex-direction: column; }
+  .headerSection h1 {
+    margin-bottom: 70px; }
+  .headerSection p {
+    font-weight: 300; }
+
+.section1 {
+  padding: 100px 0; }
+
+.sloganText {
+  margin: 20px 0 30px; }
+  .sloganText li {
+    display: inline-block;
+    margin: 0 20px; }
+
+.section2 {
+  background-color: #B3CC57; }
+
+.sectionAnimate {
+  background-color: #71B99E; }
+
+.sectionWOW {
+  background-color: #B3CC57; }
+
+.sectionWOWvsnotWow {
+  background-color: #FFF89B; }
+
+.sectionRef {
+  background-color: #71B99E; }
+
+.contentWrapper {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s; }
+
+.listMember {
+  max-width: 1020px;
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 0; }
+  .listMember li {
+    margin-bottom: 20px;
+    max-width: 170px;
+    display: inline-block;
+    margin: 20px; }
+
+.sectionWOWvsnotWow h2 {
+  margin-bottom: 20px; }
+.sectionWOWvsnotWow h3 {
+  font-size: 20px; }
+
+.listRef img {
+  max-width: 400px; }
+
+#granim-canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  width: 100% !important;
+  height: 100% !important; }
+
+.containerWrapper {
+  position: relative;
+  z-index: 1; }
+
+.blockLogo {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 3; }
+
+#svg01 > svg {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  #svg01 > svg {
+    width: 500px; } }
+.square, .circle, .line {
+  -webkit-animation: 7s crazy infinite;
+  animation: 7s crazy infinite; }
+
+@-webkit-keyframes line {
+  0% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; }
+  50% {
+    stroke-dasharray: 600 0; }
+  100% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; } }
+@keyframes line {
+  0% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; }
+  50% {
+    stroke-dasharray: 600 0; }
+  100% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; } }
+@-webkit-keyframes crazy {
+  0% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; }
+  50% {
+    stroke-dasharray: 600 0; }
+  70% {
+    stroke-dasharray: 300 0; }
+  90% {
+    stroke-dasharray: 0 300; }
+  100% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; } }
+@keyframes crazy {
+  0% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; }
+  50% {
+    stroke-dasharray: 600 0; }
+  70% {
+    stroke-dasharray: 300 0; }
+  90% {
+    stroke-dasharray: 0 300; }
+  100% {
+    stroke-dasharray: 0 600;
+    stroke-dashoffset: 10; } }
+.animate1s {
+  animation-delay: 1s; }
+
+.animate2s {
+  animation-delay: 2s; }
+
+.animate3s {
+  animation-delay: 3s; }
+
+.animate4s {
+  animation-delay: 4s; }
+
+.animate5s {
+  animation-delay: 5s; }
+
+.animate6s {
+  animation-delay: 6s; }
+
+.animate7s {
+  animation-delay: 7s; }
+
+.animate8s {
+  animation-delay: 8s; }
+
+.animate8s {
+  animation-delay: 9s; }
+
+.animate8s {
+  animation-delay: 10s; }
+
+.animate8s {
+  animation-delay: 11s; }
+
+/*# sourceMappingURL=style.css.map */

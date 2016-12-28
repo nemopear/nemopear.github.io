@@ -1,0 +1,110 @@
+.section {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 50px 0;
+}
+.headerSection {
+    flex-direction: column;
+    h1 {
+        margin-bottom: 70px;
+    }
+    p {
+        font-weight: 300;
+    }
+}
+.section1 {
+    padding: 100px 0;
+}
+.sloganText {
+    margin: 20px 0 30px;
+    li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+}
+.section2 {
+    background-color: $colorGreen;
+}
+.sectionAnimate {
+    background-color: $colorBlue;
+}
+.sectionWOW {
+    background-color: $colorGreen;
+}
+.sectionWOWvsnotWow {
+    background-color: $colorYellow;
+}
+.sectionRef {
+    background-color: $colorBlue;
+}
+.contentWrapper {
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+}
+
+// section team
+.listMember {
+    max-width: 1020px;
+    margin: 0 auto;
+    display: inline-block;
+    font-size: 0;
+    li {
+        margin-bottom: 20px;
+        max-width: 170px;
+        display: inline-block;
+        margin: 20px;
+    }
+}
+
+.sectionWOWvsnotWow {
+    h2 {
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+.listRef {
+    img { max-width: 400px;}
+}
+
+// lazyline
+
+#granim-canvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.containerWrapper {
+    position: relative;
+    z-index: 1;
+}
+
+
+.blockLogo {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.platooLogo {
+
+}
+
+#svg01 > svg {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #svg01 > svg {
+        width: 500px;
+    }
+}

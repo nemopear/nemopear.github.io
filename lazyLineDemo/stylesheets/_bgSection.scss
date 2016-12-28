@@ -1,0 +1,11 @@
+.bgSection1 {
+    background-image: url(../images/teamCover.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(2px) brightness(0.8);
+    z-index: -1;
+}
