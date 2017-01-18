@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold; }
+
+.no-list {
+  list-style: none;
+  padding: 0; }
+
+.pageTitle {
+  margin-bottom: 20px; }
+
+.sectionTitle {
+  margin-bottom: 20px; }
+
+hr {
+  border-top: 2px solid #eee;
+  margin: 40px 0; }
+
+.ModuleGuidePage {
+  font-family: 'Lato', sans-serif;
+  background-color: #2a282b;
+  color: #b5b5b5; }
+  .ModuleGuidePage .listModule h2 {
+    margin-bottom: 40px; }
+  .ModuleGuidePage .listModule a {
+    color: #b5b5b5; }
+
+.listModule {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  margin: 20px 0; }
+  .listModule li {
+    display: inline-block;
+    margin: 0 20px 20px; }
+  .listModule li a {
+    padding: 20px;
+    display: block;
+    border: 2px solid #b5b5b5;
+    text-decoration: none;
+    transition: background-color ease 0.7s; }
+    .listModule li a:hover, .listModule li a:active, .listModule li a:focus {
+      background-color: #fff;
+      color: #2a282b;
+      border-color: #fff; }
+
+.contentContainer {
+  padding: 50px 0; }
+
+.listThumbnail {
+  position: relative; }
+  .listThumbnail .title {
+    font-size: 18px;
+    font-weight: normal;
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 10px;
+    margin: 0 0 10px; }
+  .listThumbnail p {
+    margin-bottom: 0; }
+  .listThumbnail .textWrapper {
+    transform: translateY(-50%) translateZ(0);
+    -moz-transform: translateY(-50%) translateZ(0);
+    -webkit-transform: translateY(-50%) translateZ(0);
+    -o-transform: translateY(-50%) translateZ(0);
+    -ms-transform: translateY(-50%) translateZ(0);
+    padding: 20px 15px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: #fff; }
+
+.thumnnailItem a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3; }
+
+.imageWrapper {
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0); }
+
+.hoverScaleHidetext .title, .hoverScaleHidetext p {
+  transform: scale(0) translateZ(0);
+  -moz-transform: scale(0) translateZ(0);
+  -webkit-transform: scale(0) translateZ(0);
+  -o-transform: scale(0) translateZ(0);
+  -ms-transform: scale(0) translateZ(0);
+  transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s; }
+.hoverScaleHidetext .thumnnailItem:hover .title, .hoverScaleHidetext .thumnnailItem:hover p {
+  transform: scale(1) translateZ(0);
+  -moz-transform: scale(1) translateZ(0);
+  -webkit-transform: scale(1) translateZ(0);
+  -o-transform: scale(1) translateZ(0);
+  -ms-transform: scale(1) translateZ(0); }
+
+.thumnnailItem {
+  margin-bottom: 30px;
+  max-width: 500px;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0); }
+
+.thumnnailItem .imageWrapper:after {
+  content: '\00a0';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0); }
+
+.imageWrapper img {
+  transform: scale(1) translateZ(0);
+  -moz-transform: scale(1) translateZ(0);
+  -webkit-transform: scale(1) translateZ(0);
+  -o-transform: scale(1) translateZ(0);
+  -ms-transform: scale(1) translateZ(0);
+  transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s; }
+
+.thumnnailItem:hover .imageWrapper img, .thumnnailItem:active .imageWrapper img, .thumnnailItem:focus .imageWrapper img {
+  transform: scale(1.1) translateZ(0);
+  -moz-transform: scale(1.1) translateZ(0);
+  -webkit-transform: scale(1.1) translateZ(0);
+  -o-transform: scale(1.1) translateZ(0);
+  -ms-transform: scale(1.1) translateZ(0); }
+.thumnnailItem:hover .imageWrapper:after, .thumnnailItem:active .imageWrapper:after, .thumnnailItem:focus .imageWrapper:after {
+  opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */
