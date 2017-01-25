@@ -160,3 +160,8 @@
 	position: relative;
 	min-height: 0px;
 }
+
+/* No Animation */
+.no-cssanimations .loaded .ip-header {
+    display: none;
+}
