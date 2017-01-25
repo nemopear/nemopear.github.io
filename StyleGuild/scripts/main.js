@@ -62,6 +62,10 @@
 								this.removeEventListener( animEndEventName, onEndHeaderAnimation );
 							}
 
+                            else {
+                                $(".no-cssanimations .layout-switch .loaded").delay(1000).animate({ opacity: 1 }, 700);
+                            }
+
 							classie.add( document.body, 'layout-switch' );
 							window.removeEventListener( 'scroll', noscroll );
 						};

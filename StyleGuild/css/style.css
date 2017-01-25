@@ -467,4 +467,7 @@ p {
 .no-cssanimations .layout-switch .ip-header {
   display: none; }
 
+.no-cssanimations .layout-switch .ip-container {
+  opacity: 0; }
+
 /*# sourceMappingURL=style.css.map */
