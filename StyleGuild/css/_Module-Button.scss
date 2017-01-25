@@ -1,0 +1,37 @@
+.buttonModule {
+    margin: 0 0 35px;
+}
+
+.generalButton {
+    display:inline-block;
+    font-size: 16px;
+    color:#fff;
+    border: 0;
+    text-transform:uppercase;
+    padding: 10px 20px;
+    cursor:pointer;
+    text-align:center;
+    &:hover, &:active, &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.button3DOrange {
+    background-color: #eb8143;
+    box-shadow: -3px 5px 0 0 #c5642d;
+    border-radius: 5px;
+    position: relative;
+    &:hover, &:active, &:focus {
+        box-shadow: -3px 3px 0 0 #c5642d;
+        top: 2px;
+    }
+}
+
+.shadowBottom {
+    box-shadow: 0 5px 0 0 #c5642d;
+    &:hover, &:active, &:focus {
+        box-shadow: 0 3px 0 0 #c5642d;
+        top: 2px;
+    }
+}

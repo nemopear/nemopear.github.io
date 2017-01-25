@@ -1,0 +1,85 @@
+.absolute {
+    position: absolute;
+}
+.fieldWrapper {
+    margin: 0 auto;
+    width: 705px;
+    height: 540px;
+    position: relative;
+}
+
+.field {
+    background: url(../images/assets/field.png) no-repeat center bottom;
+    width: 705px;
+    height: 540px;
+}
+
+.sky {
+    background: url(../images/assets/sky.png) no-repeat center top;
+    width: 705px;
+    height: 496px;
+}
+
+.cloud {
+    background: url(../images/assets/cloud.png) no-repeat center top;
+    width: 52px;
+    height: 24px;
+    top: 170px;
+    left: 200px;
+    animation: cloudAnimate1 15s alternate infinite;
+}
+
+.cloud-1 {
+    top: 200px;
+    left: 300px;
+    animation: cloudAnimate2 15s alternate infinite;
+}
+
+.treeLeft {
+    background: url(../images/assets/tree-1.png);
+    width: 139px;
+    height: 115px;
+    position: absolute;
+    bottom: 130px;
+    left: -12px;
+}
+
+.treeRight {
+    background: url(../images/assets/tree-2.png);
+    width: 173px;
+    height: 148px;
+    position: absolute;
+    bottom: 130px;
+    right: -24px;
+}
+
+.waveWrapper {
+    width: 704px;
+    height: 110px;
+    bottom: -30px; 
+    left: 1px; 
+    overflow: hidden;
+}
+.wave {
+    background: url(../images/assets/wave.png) bottom center;
+    width: 1190px;
+    height: 110px;
+    bottom: 0;
+    left: 0;
+    animation: waveAnimate 15s alternate infinite;
+}
+
+.eiffel {
+    bottom: 140px;
+    right: 165px;
+}
+
+.pyramid {
+    right: 260px;
+    bottom: 142px;
+}
+
+.windmill {
+    right: 480px;
+    bottom: 142px;
+}

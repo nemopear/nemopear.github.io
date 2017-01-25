@@ -1,0 +1,61 @@
+.animate1s {
+    animation-delay: 1s;
+}
+.animate1-5s {
+    animation-delay: 1.5s;
+}
+.animate2s {
+    animation-delay: 2s;
+}
+.animate2-5s {
+    animation-delay: 2.5s;
+}
+.animate3s {
+    animation-delay: 3s;
+}
+.animate3-5s {
+    animation-delay: 3.5s;
+}
+.animate4s {
+    animation-delay: 4s;
+}
+.animate4-5s {
+    animation-delay: 4.5s;
+}
+.animate5s {
+    animation-delay: 5s;
+}
+.animate5-5s {
+    animation-delay: 5.5s;
+}
+.animate6s {
+    animation-delay: 6s;
+}
+
+
+@keyframes cloudAnimate1 {
+    0% { 
+        left: 200px; 
+    }
+    100% { 
+        left: 400px; 
+    }
+}
+
+@keyframes cloudAnimate2 {
+    0% { 
+        left: 300px; 
+    }
+    100% { 
+        left: 500px; 
+    }
+}
+
+@keyframes waveAnimate {
+    0% { 
+        left: 0; 
+    }
+    100% { 
+        left: -400px; 
+    }
+}

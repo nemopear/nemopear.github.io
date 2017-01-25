@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Module Guide</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bgBlack">
+    <header class="header">
+        
+    </header>
+    <div class="mainContentContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="contentContainer">
+                        <h1 class="pageTitle text-center">&#60;q&#62; vs &#60;blockquote&#62;</h1>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="">
+                                        <h2>&#60;q&#62;</h2>
+                                        <p>
+                                            The HTML <mark>&#60;q&#62;</mark> element indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <mark>&#60;blockquote&#62;</mark> element.
+                                        </p>
+                                        <h3>Example 1</h3>
+                                        <div class="codeWrapper">
+                                            <code>
+                                                According to Mozilla's website,<br />
+                                                &#60;p cite="https://www.mozilla.org/en-US/about/history/details/"&#62;<br />Firefox 1.0
+                                                was released in 2004 and became a big success.
+                                                &#60;/q&#62;
+                                            </code>
+                                        </div>
+                                        <br />
+                                        <p>According to Mozilla's website,
+                                        <q cite="https://www.mozilla.org/en-US/about/history/details/">Firefox 1.0
+                                        was released in 2004 and became a big success.</q>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="">
+                                        <h2>&#60;blockquote&#62;</h2>
+                                        <p>
+                                            The HTML <strong><mark>&#60blockquote&#62</mark></strong> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the &#60cite&#62 element.
+                                        </p>
+                                        <h3>Example 1</h3>
+                                        <div class="codeWrapper">
+                                            <code>
+                                                &#60blockquote cite="http://developer.mozilla.org"&#62<br />
+                                                    &#60p&#62This is a quotation taken from the Mozilla Developer Center.&#60/p&#62<br />
+                                                &#60/blockquote&#62                                              
+                                            </code>
+                                        </div>
+                                        <br />
+                                        <blockquote cite="http://developer.mozilla.org">
+                                            <p>This is a quotation taken from the Mozilla Developer Center.</p>
+                                        </blockquote>  
+                                        <br />
+                                        <h3>Example 2</h3>
+                                        <figure>
+                                            <blockquote>
+                                                <p>The truth may be puzzling. It may take some work to grapple with.
+                                                It may be counterintuitive. It may contradict deeply held
+                                                prejudices. It may not be consonant with what we desperately want to
+                                                be true. But our preferences do not determine what's true. We have a
+                                                method, and that method helps us to reach not absolute truth, only
+                                                asymptotic approaches to the truth — never there, just closer
+                                                and closer, always finding vast new oceans of undiscovered
+                                                possibilities. Cleverly designed experiments are the key.</p>
+                                            </blockquote>
+                                            <figcaption>
+                                                Carl Sagan, in "<cite>Wonder and Skepticism</cite>", from
+                                                the <cite>Skeptical Inquirer</cite> Volume 19, Issue 1 (January-February
+                                                1995)
+                                            </figcaption>
+                                        </figure>                                                                             
+                                    </div>
+                                </div><br /><br />
+                                <h3>Attribute</h3>
+                                <p>
+                                    <code>&#60cite&#62</code> : A URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.
+                                    <br /><small>cite =Citation metadata</small><br />
+                                </p>
+                                <h3>Usage Note</h3>
+                                <p>
+                                    Most modern browsers will automatically add quotation marks around text inside a &#60q&#62 element. A style rule may be needed to add quotation marks in older browsers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script type="text/javascript" src="scripts/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

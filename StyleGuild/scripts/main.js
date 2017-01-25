@@ -1,117 +1,88 @@
-﻿// if $.browser is not defined
-(function ($) {
-    if ("undefined" == typeof $.browser) {
-        $.uaMatch = function (a) { a = a.toLowerCase(); a = /(chrome)[ \/]([\w.]+)/.exec(a) || /(webkit)[ \/]([\w.]+)/.exec(a) || /(opera)(?:.*version|)[ \/]([\w.]+)/.exec(a) || /(msie) ([\w.]+)/.exec(a) || 0 > a.indexOf("compatible") && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec(a) || []; return { browser: a[1] || "", version: a[2] || "0" } }; var matched = $.uaMatch(navigator.userAgent), browser = {}; matched.browser && (browser[matched.browser] = !0, browser.version = matched.version); browser.chrome ? browser.webkit = !0 : browser.webkit &&
-        (browser.safari = !0); $.browser = browser
-    };
-})(jQuery);
+﻿/**
+ * main.js
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2014, Codrops
+ * http://www.codrops.com
+ */
+(function() {
 
-//os and browser detector
-var OSName = "Unknown OS";
-if (navigator.appVersion.indexOf("Win") != -1) OSName = "windows";
-if (navigator.appVersion.indexOf("Mac") != -1) OSName = "macos";
-if (navigator.appVersion.indexOf("X11") != -1) OSName = "unix";
-if (navigator.appVersion.indexOf("Linux") != -1) OSName = "linux";
+	var support = { animations : Modernizr.cssanimations },
+		container = document.getElementById( 'ip-container' ),
+		header = container.querySelector( 'header.ip-header' ),
+		loader = new PathLoader( document.getElementById( 'ip-loader-circle' ) ),
+		animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
+		// animation end event name
+		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
 
-$('html').removeClass('no-js');
-$('html').addClass(OSName);
+	function init() {
+		var onEndInitialAnimation = function() {
+			if( support.animations ) {
+				this.removeEventListener( animEndEventName, onEndInitialAnimation );
+			}
 
-$.each($.browser, function (a, b) {
-    if (a != 'version') {
-        if (a == 'msie') {
-            var v = Math.floor($.browser.version);
-            $('html').addClass('ie ie' + v);
-            for (var i = v; i <= 10; i++) if (v < i) $('html').addClass('lt-ie' + i);
-        }
-        else $('html').addClass(a);
-    }
-    if (navigator.userAgent.match(/Trident\/7\./)) {
-        $('html').addClass('ie11');
-    }
-});
+			startLoading();
+		};
 
-function GetIE11Detection() {
-    var sAgent = window.navigator.userAgent;
-    var Idx = sAgent.indexOf("MSIE");
+		// disable scrolling
+		window.addEventListener( 'scroll', noscroll );
 
-    if (!!navigator.userAgent.match(/Trident\/7\./)) {
-        setTimeout(function () { $('html').removeClass('mozilla'); }, 100);
-        $('html').addClass('ie11');
-    }
-}
+		// initial animation
+		classie.add( container, 'loading' );
 
-function detectAllIE() {
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf('MSIE ');
-    var trident = ua.indexOf('Trident/');
-    var edge = ua.indexOf('Edge/');
-    if (msie > 0 || trident > 0 || edge > 0) {
-        // msie > 0 for IE 10 or older 
-        // trident > 0 for IE 11
-        // edge > 0 for Edge 
-        $('html').addClass('ie');
-    }
-}
+		if( support.animations ) {
+			container.addEventListener( animEndEventName, onEndInitialAnimation );
+		}
+		else {
+			onEndInitialAnimation();
+		}
+	}
 
-/* footer alway bottom */
-function footerAlwaysBottom() {
-    var footerHeight = $('.footer').outerHeight(true);
-    //$('body').css('padding-bottom', footerHeight);
-    $('.footer').addClass('footerStick');
-}
+	function startLoading() {
+		// simulate loading something..
+		var simulationFn = function(instance) {
+			var progress = 0,
+				interval = setInterval( function() {
+					progress = Math.min( progress + Math.random() * 0.1, 1 );
 
-/* blocks same height */
-function equalHeight(container) {
-    var currentTallest = 0,
-     currentRowStart = 0,
-     rowDivs = new Array(),
-     $el,
-     topPosition = 0; $(container).each(function () {
-         $el = $(this);
-         $($el).height('auto')
-         topPostion = $el.position().top;
-         if (currentRowStart != topPostion) {
-             for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-                 rowDivs[currentDiv].height(currentTallest);
-             }
-             rowDivs.length = 0; // empty the array
-             currentRowStart = topPostion;
-             currentTallest = $el.height();
-             rowDivs.push($el);
-         } else {
-             rowDivs.push($el);
-             currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-         }
-         for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-             rowDivs[currentDiv].height(currentTallest);
-         }
-     });
-}
+					instance.setProgress( progress );
 
-function truncateText(element) {
-    $(element).dotdotdot({
-        ellipsis: '... ',
-        wrap: 'word',
-        watch: true
-    });
-}
+					// reached the end
+					if( progress === 1 ) {
+						classie.remove( container, 'loading' );
+						classie.add( container, 'loaded' );
+						clearInterval( interval );
 
-function onContentReady () {
-    $('body').css('visibility', 'visible').hide().fadeIn(500);
-}
+						var onEndHeaderAnimation = function(ev) {
+							if( support.animations ) {
+								if( ev.target !== header ) return;
+								this.removeEventListener( animEndEventName, onEndHeaderAnimation );
+							}
 
-$(function () {
-    GetIE11Detection();
-    detectAllIE();
-});
+							classie.add( document.body, 'layout-switch' );
+							window.removeEventListener( 'scroll', noscroll );
+						};
 
-$(window).load(function () {
-    onContentReady();
-});
+						if( support.animations ) {
+							header.addEventListener( animEndEventName, onEndHeaderAnimation );
+						}
+						else {
+							onEndHeaderAnimation();
+						}
+					}
+				}, 80 );
+		};
 
-$(document).ready(function() {
-    $('.closeHotAds').on('click', function(e) { 
-        event.preventDefault();
-        $('.hotAds').addClass('hidden');
-    });
-});
+		loader.setProgressFn( simulationFn );
+	}
+	
+	function noscroll() {
+		window.scrollTo( 0, 0 );
+	}
+
+	init();
+
+})();
