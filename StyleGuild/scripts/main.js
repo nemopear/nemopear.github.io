@@ -63,7 +63,7 @@
 							}
 
                             else {
-                                $(".no-cssanimations .layout-switch .loaded").delay(1000).animate({ opacity: 1 }, 700);
+                                $(".no-cssanimations .layout-switch .loaded").delay(3000).animate({ opacity: 1 }, 700);
                             }
 
 							classie.add( document.body, 'layout-switch' );
