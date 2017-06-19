@@ -1,0 +1,47 @@
+.header-banner {
+    background: url(../images/header-banner.png) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    h1 {
+        @include centerer;
+        font-family: 'Suez One', serif;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 2.5rem;
+    }
+    .special-text {
+        font-family: 'Sacramento', cursive;
+        display: block;
+        font-size: 1.8rem;
+        line-height: 40px;
+        text-transform: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .header-banner {
+        h1 {
+            font-size: 3.5rem;
+        }
+        .special-text {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header-banner {
+        height: 700px;
+        h1 {
+            font-size: 4.2rem;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
