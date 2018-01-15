@@ -1,0 +1,58 @@
+.itemImg {
+    margin-bottom: 30px;
+    a {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        &:after {
+            transition: all .2s ease-in-out;
+            content: '\00a0';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        &:hover, &:focus, &:active {
+            &:after {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+
+
+
+.itemOther {
+    margin-bottom: 15px;
+    clear: both;
+    overflow: hidden;
+    .imgWrapper {
+        width: 30%;
+        float: left;
+        margin-right: 15px;
+    }
+    .textWrapper {
+
+    }
+    .title {
+        font-size: 16px;
+    }
+    .date {
+        color: #555;
+    }
+}
+
+.sidebarTitle {
+    margin-bottom: 15px;
+}
+
+.pageTwoCol {
+    > .container  .row > .col-md-8 {
+        border-right: 1px solid #eee;
+    }
+    .blockWrapper {
+        margin: 30px 0;
+    }
+}

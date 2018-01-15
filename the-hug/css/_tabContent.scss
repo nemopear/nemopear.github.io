@@ -1,0 +1,20 @@
+.tabDescription {
+    padding: 15px 0;
+}
+
+.serviceTab .nav-tabs {
+    border-bottom: 0;
+    margin: 30px 0 10px;
+    .nav-link {
+        border: 1px solid $baseBgColor;
+        border-radius: 0;
+        margin-right: 15px;
+        &.active {
+            background-color: $baseBgColor;
+            color: #fff;
+        }
+    }
+    .nav-item {
+        margin-bottom: 15px;
+    }
+}
