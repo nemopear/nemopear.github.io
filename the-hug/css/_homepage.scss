@@ -178,6 +178,26 @@ h1, h2, h3 {
     }
 }
 
+.owner-wrapper {
+    text-align: center;
+    max-width: 250px;
+    .img-wrapper {
+        max-width: 180px;
+        margin-bottom: 7px;
+        position: relative;
+        .name {
+            margin-bottom: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.441);
+            color: #fff;
+            padding: 5px;
+        }
+    }
+}
+
 .ccWrapper {
     text-align: center;
     padding: 15px 0;
@@ -229,11 +249,16 @@ h1, h2, h3 {
 
     .navbar-nav {
         width: 100%;
-        ul { width: 100%;}
+        ul { 
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
         ul > li {
             display: inline-block;
             padding: 2px 0;
             width: auto;
+            flex-grow: 1;
             a {
                 &:hover, &.active {
                     text-decoration: underline;

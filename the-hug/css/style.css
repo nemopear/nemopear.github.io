@@ -122,6 +122,23 @@ h1, h2, h3 {
   .footer .title {
     font-size: 24px; }
 
+.owner-wrapper {
+  text-align: center;
+  max-width: 250px; }
+  .owner-wrapper .img-wrapper {
+    max-width: 180px;
+    margin-bottom: 7px;
+    position: relative; }
+    .owner-wrapper .img-wrapper .name {
+      margin-bottom: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.441);
+      color: #fff;
+      padding: 5px; }
+
 .ccWrapper {
   text-align: center;
   padding: 15px 0;
@@ -156,11 +173,14 @@ h1, h2, h3 {
   .navbar-nav {
     width: 100%; }
     .navbar-nav ul {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
     .navbar-nav ul > li {
       display: inline-block;
       padding: 2px 0;
-      width: auto; }
+      width: auto;
+      flex-grow: 1; }
       .navbar-nav ul > li a:hover, .navbar-nav ul > li a.active {
         text-decoration: underline;
         color: #fff; }
