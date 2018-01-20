@@ -100,7 +100,8 @@ h1, h2, h3 {
   padding: 50px 0;
   margin: 0;
   background-color: #0072bb;
-  color: #fff; }
+  color: #fff;
+  font-size: 25px; }
 
 .portfolios a {
   color: #333;
@@ -271,6 +272,8 @@ h1, h2, h3 {
     font-size: 16px; }
   .itemOther .date {
     color: #555; }
+  .itemOther a {
+    color: #333; }
 
 .sidebarTitle {
   margin-bottom: 15px; }
@@ -325,5 +328,7 @@ h1, h2, h3 {
     margin-top: 50px; }
   .contactWrapper .btn {
     cursor: pointer; }
+  .contactWrapper a {
+    color: #333; }
 
 /*# sourceMappingURL=style.css.map */
