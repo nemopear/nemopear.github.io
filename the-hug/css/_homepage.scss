@@ -214,6 +214,13 @@ h1, h2, h3 {
     }
 }
 
+.pageTwoCol {
+    .imgSetWrapper {
+        min-height: 500px;
+        margin-top: 40px;
+    }
+}
+
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  
     .card-deck .card {
@@ -231,6 +238,7 @@ h1, h2, h3 {
     .portfolios {
         .card {
             margin-bottom: 15px;
+            max-width: 350px;
         }
     }
 }
