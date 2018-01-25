@@ -9,7 +9,23 @@ $(function(){
     $('.serviceTab .nav-link').removeClass('active');
     $('a[href="#'+ activeTab +'"]').addClass('active');
 
-    // $('.serviceTab .nav-link').on('click', function() {
-
-    // });
+    $(".nav-tabs").find("li a").last().click();
+    
+    var url = document.URL;
+    var hash = url.substring(url.indexOf('#'));
+    
+    $(".nav-tabs").find("li a").each(function(key, val) {
+    
+      if (hash == $(val).attr('href')) {
+    
+        $(val).click();
+    
+      }
+      $(val).click(function(ky, vl) {
+    
+        console.log($(this).attr('href'));
+        location.hash = $(this).attr('href');
+      });
+    
+    });
   });
