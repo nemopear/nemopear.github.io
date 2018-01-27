@@ -16,7 +16,20 @@ $(function(){
             var scrollmem = $('body').scrollTop();
             window.location.hash = this.hash;
             $('html,body').scrollTop(scrollmem);
-          });
+            
+        });
+
+        $('.nav-link').click(function (e) {
+            if (url.match('#')) {
+                //var scrollmem = $('body').scrollTop();
+                $('html,body').animate({ scrollTop: 0 }, 600);
+                var activeTab = 'service1';
+                $(".tab-pane").removeClass("active in show");
+                $("#" + activeTab).addClass("active in show");
+                $('.serviceTab .nav-link').removeClass('active');
+                $('a[href="#'+ activeTab +'"]').addClass('active');
+            }
+        });
     }
     
   });
